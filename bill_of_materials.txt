@@ -1,0 +1,17 @@
+Resistor Values
+4k = 1k + 1k + 1k + 1k
+10k = 10k
+6k = 12k || 12k
+12k = 12k
+24k = 12k + 12k
+20k = 10k + 10k
+3k = 1.5k + 1.5k
+2k = 1k + 1k
+
+LF347N (Wide Bandwidth Quad JFET Input Operational Amplifiers)
+https://www.ti.com/product/LF347-N
+https://www.ti.com/lit/ds/symlink/lf347-n.pdf?ts=1685703512723
+
+TL084CN (JFET-Input Operational Amplifiers)
+https://www.mouser.com/ProductDetail/STMicroelectronics/TL084CN?qs=vqk%252BPKT8fSxJW2aTIl98LQ%3D%3D
+https://www.mouser.com/datasheet/2/389/tl084ac-1383769.pdf
