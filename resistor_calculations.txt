@@ -1,0 +1,9 @@
+Resistor Values
+3k = 1k + 1k + 1k + 1k
+9k = 10k
+5k = 12k || 12k
+11k = 12k
+23k = 12k + 12k
+19k = 10k + 10k
+2k = 1.5k + 1.5k
+1k = 1k + 1k
