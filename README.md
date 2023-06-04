@@ -17,6 +17,9 @@ This space is designated for Markdown resources:
     This is a multiline comment
 -->
 
+# Video Reference
+The tutorial assembled for this project derive from [KiCad STM32 + USB + Buck Converter PCB Design and JLCPCB Assembly (Update) - Phil's Lab #11](https://www.youtube.com/watch?v=C7-8nUU6e3E) by [Phil's Lab](https://www.youtube.com/@PhilsLab) on [YouTube](https://www.youtube.com)
+
 # Bill of Materials
 ## Resistor Chart
 Resistor Values
