@@ -76,11 +76,11 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
 # Transferring assignments from CubeMX to KiCad
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1224s)
 - Add more global labels
+# 'NoConnect' flags
+[Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1438s)
 - Add No Connects
     - Connect to Ground
     - Hotkey: Insert = Continuously Add No Connects
-# 'NoConnect' flags
-[Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1438s)
 # Decoupling capacitors
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1488s)
 # VDDA pin decoupling
