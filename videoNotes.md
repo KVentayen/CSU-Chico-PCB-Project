@@ -19,32 +19,66 @@ This space is designated for Markdown resources:
 
 This document saves notes taken on the [kicad stm32 + usb + buck converter pcb design and jlcpcb assembly (update) - phil's lab #11](https://www.youtube.com/watch?v=c7-8nuu6e3e) by [phil's lab](https://www.youtube.com/@philslab) on [YouTube](https://www.youtube.com)
 
-# Introduction
+# Introduction | SKIP
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E)
-# Topics Covered
+- Refer to previous Tutorial
+# Topics Covered | SKIP
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=14s)
-# JLC PCB Assembly Showcase
+- Video Overview
+# JLC PCB Assembly Showcase | SKIP
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=31s)
-# Parts used in design (JLCPCB parts library)
+- Showcase PCBs
+# Parts used in design (JLCPCB parts library) | SKIP
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=58s)
-# STM32 pin assignment in STM32CubeMX
+- Show the JLC PCB parts library jlcpcb.com/parts
+- Show design decisions for components
+# STM32 pin assignment in STM32CubeMX | SKIP
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=208s)
+- Configure Microcontroller using STM32 CubeMX
 # KiCad project and schematic
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=583s)
+- Start a new Project
+- Start a Scematic
 # Schematic page settings
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=606s)
+- Select Edit Page Settings
+- Main Parameters:
+    - Page Size
+    - Orientation
+    - Issue Date
+    - Revision
+    - Title
+    - Company
 # Adding STM32F405 to schematic
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=653s)
+- Locate the STM32 Microcontroller and place it in schematic
 # STM32 power pins
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=730s)
+- Place the Power Symbols
+    - Ground
+    - +3.3V
+    - +3.3VA
+- Hotkey: Hover + M = Move Symbol
+- Hotkey: Hover + W = Add Wires
 # Labeling pins/global labels
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=854s)
+- Label Pins Using Global Labels
 # VCAP pins
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=897s)
+- Add Capacitor Symbols
+- Hotkey: Hover + C = Copy Component
+    - Different from Video: Hover + Ctrl + C
 # NRST and BOOT0 pins, Bootmodes
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=997s)
+- Discuss about NRST and BOOT0
+    - Refer to the Datasheet
+- Add Switch Component
 # Transferring assignments from CubeMX to KiCad
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1224s)
+- Add more global labels
+- Add No Connects
+    - Connect to Ground
+    - Hotkey: Insert = Continuously Add No Connects
 # 'NoConnect' flags
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1438s)
 # Decoupling capacitors
