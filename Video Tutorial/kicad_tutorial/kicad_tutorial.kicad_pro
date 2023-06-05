@@ -244,7 +244,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Custom"
+    ]
   },
   "meta": {
     "filename": "kicad_tutorial.kicad_pro",

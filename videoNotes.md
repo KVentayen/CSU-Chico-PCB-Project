@@ -83,14 +83,66 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
     - Hotkey: Insert = Continuously Add No Connects
 # Decoupling capacitors
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1488s)
+- Add Decoupling Capacitors to the Power Supplies
 # VDDA pin decoupling
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1570s)
+- Basic Filtering with Inductor and Capacitors
+    - Add Inductor
+    - Add Capacitor
 # Crystal circuitry (HSE)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=1674s)
+- Add a Ceramic Crystal Oscillator
+    - Review Documentation for the Crystal Oscillator for suggested circuitry
+    - Add Capacitors
+    - Add Resistor
+    - Connect HSE_IN
+    - Connect HSE_OUT
+- Add Text Comment
+- Rearrange Schematic
+- Use the ``Place Graphic Lines or Polygons`` tool to group different parts of the schematic
+- Add Text to Label Group
 # LED and current limiting resistor
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=2235s)
+- Add Status LED Label
+- Add LED
+- Add Resistor
+- Add Ground
 # Buck converter and circuitry (+ fusing, reverse polarity protection)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=2366s)
+- Add power to the board
+- Refer to Data Sheet for Buck Regulator
+- This Symbol is a Custom Symbol
+    - Add Custom Symbol
+    - Add ``BUCK_IN`` Label
+    - Add ``BUCK_EN`` Label
+    - Add ``BUCK_BST`` Label
+    - Add ``BUCK_SW`` Label
+    - Add ``BUCK_FB`` Label
+- Add Additional Circuitry
+- Review Transistor Datasheet
+    - Use Mosfet for Reverse Polarity Protection
+    - Add ``BUCK_IN`` Label
+- Add a Ferrite Bead
+- Used a Voltage Divider to Step Down Voltage from ``Buck_IN``
+    - Add Resistors
+    - Add ``BUCK_IN`` Label
+    - Add ``BUCK_EN`` Label
+    - Add Ground
+- Add Bootstrap Capacitor
+    - Add Capacitor
+    - Add ``BUCK_BST`` Label
+    - Add ``BUCK_SW`` Label
+- Add Buck Switch Circuitry
+    - Add Schottky Diode
+    - Add Ground
+    - Add Inductor
+    - Add Capacitors
+    - Add ``BUCK_SW`` label
+- Use Resistors in series to produce the Feedback Circuitry
+    - Add ``BUCK_FB`` label
+    - Add Resistors
+- Add Lines to Group Circuit
+- Add Label to Group Circuit
 # Connectors (SWD, I2C, UART)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=3375s)
 # USB
