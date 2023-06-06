@@ -30,6 +30,7 @@ This workshop may be of interest to the following clubs, organizations, or affil
 - Wildcat Formula
 - Chico Rocketry and Aerospace Club
 - General Electrical and Computer Engineering Classes
+- Mechanical Keyboard Club
 
 # Equiptment
 ## Development
