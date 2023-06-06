@@ -145,8 +145,46 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
 - Add Label to Group Circuit
 # Connectors (SWD, I2C, UART)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=3375s)
+- Add Screw Terminal Symbol
+    - Add +12V Power Supply
+    - Add Ground
+- Add Serial Bus Connector (02x05)
+    - Add +3.3V Power Supply
+    - Add Ground
+    - Add a No Connect
+    - Add Resistor
+    - Add Global Labels
+- Add Pull Up Resistors to ``I2C1_SCL`` and ``I2C1_SDA``
+    - Add Resistors
+    - Add +3V3 Power Supply
+- Add Connector (02x04)
+    - Add +3V3 Power Supply
+    - Add Ground
+    - Add ``I2C1_SCL`` Label
+    - Add ``I2C1_SDA`` Label
+- Add Connector (02x04)
+    - Add +3V3 Power Supply
+    - Add Ground
+    - Add ``USART3_TX`` Label
+    - Add ``USART3_RX`` Label
 # USB
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=3760s)
+- Add USB Connector (USB B)
+    - Add Ground
+    - Add No Connect
+- Add ESD Protection
+- Add Schottkey Diode to the Power Circuitry
+    - Add +5V Power Supply
+- Add ``USB_CONN_D+``
+- Add ``USB_CONN_D-``
+- Assign Labels and Nmbering for Components
+    - Done Automatically in Newer Version
+- Add Power Indicator LED
+    - Add Red LED
+    - Add Resistor
+    - Add +3V3 Power Supply
+    - Add Ground
+- Add Label
 # Electrical rules checker (ERC)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=4269s)
 # Mounting Holes
