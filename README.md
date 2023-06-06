@@ -20,6 +20,38 @@ This space is designated for Markdown resources:
 # Video Reference
 The tutorial assembled for this project derive from [KiCad STM32 + USB + Buck Converter PCB Design and JLCPCB Assembly (Update) - Phil's Lab #11](https://www.youtube.com/watch?v=C7-8nUU6e3E) by [Phil's Lab](https://www.youtube.com/@PhilsLab) on [YouTube](https://www.youtube.com)
 
+# Promotional
+This workshop may be of interest to the following clubs, organizations, or affiliations
+- Senior Capstone Electrical and Computer Engineering
+- Senior Capstone Mechanical and Mechatronic Engineering
+- Intitute of Elecrical and Electronics Engineers (IEEE)
+- AIME
+- Wildcat Racing
+- Wildcat Formula
+- Chico Rocketry and Aerospace Club
+- General Electrical and Computer Engineering Classes
+
+# Equiptment
+## Development
+When using KiCad it would be a good idea for students to have the following:
+- Computer Mouse
+    - It would be a good idea for the speed of assembling circuits
+- Charger
+    - Just depends on the student's computer's battery life and how much it is used
+    - This also means that we would need outlets for everyone who would need to charge their device
+
+# Basic Knowledge
+It would be a good idea to ensure that students know the following concepts:
+- Nodes (as used in circuits)
+    - This is to apply the concept to symbols such as:
+        - Global Labels
+        - Ground Reference
+        - +5V Power Supply
+        - +3.3V Power Supply
+- Resistor Combinations
+    - Calculate Resistors in Parallel
+    - Calculate Resistors in Series
+
 # Bill of Materials
 ## Resistor Chart
 Resistor Values
