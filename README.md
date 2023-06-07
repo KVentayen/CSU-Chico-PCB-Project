@@ -53,6 +53,10 @@ It would be a good idea to ensure that students know the following concepts:
     - Calculate Resistors in Parallel
     - Calculate Resistors in Series
 
+# Additional Topics
+This is a list of additional topics that would be nice to cover aswell
+- EasyEDA: To get more components in to KiCad
+
 # Bill of Materials
 ## Resistor Chart
 Resistor Values
