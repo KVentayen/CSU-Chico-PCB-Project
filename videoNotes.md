@@ -187,18 +187,49 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
 - Add Label
 # Electrical rules checker (ERC)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=4269s)
+- Select icon of a bug to enable Electrical Rules Checker
+    - Icon has changed from the bug to a list (Still in the same general area)
+- Warnings and Labels
 # Mounting Holes
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=4375s)
+- Add Mounting Holes
 # Assigning footprints to symbols
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=4425s)
+- Assign PCB Footprints
+    - Find parts in JLC PCB's Library
+    - Micro USB in Video is Custom
+    - MP2359DJ-LF-Z1 is a custom component, but the package type is included in the KiCad Library
 # Generating the netlist
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5076s)
+- Select Generate NetList Icon
+    - Now this is done automatically
+    - Manually generate netlist by Pressing F8 on the keyboard
+        - https://www.reddit.com/r/KiCad/comments/sg0qqu/where_is_the_netlist_button/
 # Choosing the number of PCB layers
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5095s)
+- How many layers are going to be available to use?
+    - (Generally) The more layers that you have the easier it is to route
+    - Determined by the PCB Company
+        - JLC PCB (at the time of the video) offers PCBs with 1, 2, 4, and 6 Layers
+        - Change in cost is not significant
+    - Can use to have a dedicated Power Plane, Ground Plane, and Signal Planes
 # Design rules
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5171s)
+- Select Board Setup
+    - Change the number of Layers in the Pop-Up Window
+    - Design Rules are determined by the manufacturer
+        - Assumes JLC PCB Well
+        - Exact Specifications can be found on the manufacturer's website
 # Rough layout (section by section)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5246s)
+- Select Load Netlist (In Video)
+    - Choose Netlist File
+    - Update PCB
+- Select Update PCB with Changes... (In New Version)
+    - Update PCB
+- Make a rough layout
+- Hotkey: Hover + M = Move
+- Hotkey: Hover + R = Rotate
 # Improving the layout, finer details
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5709s)
 # Mounting hole placement
