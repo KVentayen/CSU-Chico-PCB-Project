@@ -58,6 +58,16 @@ This is a list of additional topics that would be nice to cover aswell
 - EasyEDA: To get more components in to KiCad
 
 # Bill of Materials
+
+## Equiptment
+- Soldering Iron
+- Third Hand (Hold the Board while soldering)
+- Fume Extractor
+- Wire Cutters
+- Wire Strippers
+- Solder Sucker
+- Needlenose Pliers
+
 ## Resistor Chart
 Resistor Values
 ||||||||
