@@ -228,10 +228,16 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
 - Select Update PCB with Changes... (In New Version)
     - Update PCB
 - Make a rough layout
+- Change Grid size from default to ``1.000 mm``
 - Hotkey: Hover + M = Move
 - Hotkey: Hover + R = Rotate
+- Components selected in the schematic are also selected in the PCB Layout
+    - Similarly, Components selected in the PCB Layout are Selected in the schematic
+- Compnents in close distance in the schematic would be good to have close in the PCB Layout
+- Determines the board size
 # Improving the layout, finer details
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5709s)
+- In tutorial Designators are moved to the ``F.Fab`` Layer.
 # Mounting hole placement
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=6797s)
 # Board outline and rounded corners
