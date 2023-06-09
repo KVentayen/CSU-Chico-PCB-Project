@@ -238,6 +238,17 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
 # Improving the layout, finer details
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=5709s)
 - In tutorial Designators are moved to the ``F.Fab`` Layer.
+- You want to get close within reason, too close desoldering can be difficult
+- Prioritize Decoupling
+    - Decoupling, Crystal, Critical Sections Should be Prioritized
+- Update Changes with the Schematic
+    - In Video
+        - Save Schematic
+        - Update Netlist
+        - Update PCB Layout
+    - In Current Version
+        - Save Schematic
+        - Update PCB Layout
 # Mounting hole placement
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=6797s)
 # Board outline and rounded corners
