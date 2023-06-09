@@ -251,18 +251,56 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
         - Update PCB Layout
 # Mounting hole placement
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=6797s)
+- When moving components (mounting hole is the example) press space to reset the origin for measurements
+    - Hotkey: With Component Selected + Spacebar = Center Origin to Component
+    - Use arrow keys to move in increments of the grid
 # Board outline and rounded corners
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=6910s)
+- Without an outline an automatic board outline is drawn that fits all elements in the space, with pointed corners
+- Select the Edge Cuts Layer
+    - Select Graphic Line (Video)
+        - Select Draw a Line
+    - Select Add Graphic Arc
+        - Draw an Arc
+        - Counter Clockwise to start at 0 degrees
+        - Clockwise to start with 360 degrees
 # Rearranging connectors
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7060s)
+- Can use the Space Hotkey to check alignment
+- For finer alignment make the grid increments smaller
+- Use the 3D Layout to check the overall Layout
+    - Keep in mind space for manually soldering
 # Adding track widths
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7219s)
+- Select Track Sizes
+    - Select pre-defined sizes... to add additional track sizes
+        - Select ``+`` Button to add trace width
+            - ``0.3mm`` useful for LP/PFP Package Pins
+            - ``0.5mm`` to ``1mm`` Typically used for Power
+        - Confirm choices by selecting ``OK``
 # Power and ground planes (copper pours)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7255s)
+- Select Inner Planes
+    - Select add filed zones
+        - Select a Corner of the Board (Or where edges would converge)
+            - Select the type of Net
+                - Select ``OK``
+                    - Draw Net around the Board
+                        - Do not really need to fit around the board, KiCad will do it for you
+- Fill Zone by selecting the Zone you want to fill then select ``Edit`` > ``Fill all Zones``
+- Connection to Thermal Reliefs are known as (Thermal) Spokes
+- To copy the same on one onto another layer use Select + CTRL + D then left click then open properties then change layer
+- Dedicated Power and Ground Planes allow for Easier Routing (Use a Short Wire Trace and Via) and Low Inductance
 # STM32 and routing (critical items first)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7390s)
+- Select Front Copper layer
+- Route the most important things first (High Speed or Critical)
+- Hotkey: X = Add Traces
+- Grounding and Power can be done with Vias
 # Tombstoning
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7481s)
+- For small SMD Parts
+    - occurs with uneven thermal mass distribution
 # Track spacing
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7555s)
 # Buck converter routing
