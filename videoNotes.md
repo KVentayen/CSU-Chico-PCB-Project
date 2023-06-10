@@ -303,18 +303,47 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
     - occurs with uneven thermal mass distribution
 # Track spacing
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7555s)
+- Keep in mind track spacing to avoid cross talk interference
+    - Generally 2 to 3 times the track width
+- Try to have a most traces on the Top Layer and Sort Traces on the Bottom Layer
+- Hotkey: (When drawing a Trace) V = Add a Via
 # Buck converter routing
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7729s)
+- For Power use Thick Traces or Copper Pours
+- Using Add Filed Zone you can Trace Around the Footprint to make connections
+    - When Filling Select the appropriate flag
 # Track width calculator
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7800s)
+- Track Width Calculator is on the Main Window
+    - Can be used to calculate current
+- Thicker Traces Low Inductance, good for power circuits
 # USB controlled impedance differential traces
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7959s)
+- Can determine on KiCad or JLC PCB
 # JLCPCB impedance calculator
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=7988s)
+- Add Differential Pair by editing the predefined track sizes
+- To use select Route and Select Differential Pair
+- Select Differential Pair dimensions by right cliking and selecting ``Select Differential Pair Dimensions``
+- Differential Pairs are denoted with ``+`` and ``-``, otherwise an error is given
 # Connecting GND and 3V3 (with vias to internal copper pours)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=8169s)
-# Design rules checke (DRC)
+- Vias depend on the maufacturer
+- Select add Vias (Video)
+    - Add free-standing vias (In current version)
+    - When dropped on a net it will inherit that net (node ID)
+    - Get as close as possible to pad, but not in pad
+        - When via is on pad solder may fall through the via in assembly
+    - The more vias and the closer that they are the less inductance that is produced
+    - Use Thick Short Traces
+    - Minimize Inductance
+- Adding Keepout Area Prevents Copper Pours from being made
+- Keep in mind distances of vias to each other, specifically drill specifications
+- Avoid Putting vias on the silkscreen
+- Be sure to refill the coppper pours before continuing
+# Design rules checker (DRC)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=8880s)
+- Select the Design Rules Checker Icon
 # Silkscreen (labeling, pin 1 indication, polarity indication)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=8930s)
 # Importing custom graphics as silkscreen
