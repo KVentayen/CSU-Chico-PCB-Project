@@ -346,17 +346,115 @@ This document saves notes taken on the [kicad stm32 + usb + buck converter pcb d
 - Select the Design Rules Checker Icon
 # Silkscreen (labeling, pin 1 indication, polarity indication)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=8930s)
+- Select the Silkscreen Layer
+    - Select Icon to Add Text
+    - Type information
+    - Copy, Paste, and Edit Text Boxes as needed
+    - Labeling Switches, Ports, and Indicators (LEDs)
+        - Adjust Heigth, Width, and Thickness (Thickness of the font)
+    - Indicate Polarities
+        - Add Graphic Circle
+            - Line Width determines the size of the circle with 0 diameter
+        - Add Graphic Polygon (You can also use an Arrow as well)
+    - Do not put graphics over holes or vias
+    - Do not be too confusing, make the meanings apparent
+    - Indicate Switch Modes
+    - Indicate Pin Names
+- To change footprint return to the schematic
+    - Select the Component and open its properties
+    - Change the footprint
+    - Save the schematic
+    - Update PCB Layout
+    - Re-Route Component Accordingly
 # Importing custom graphics as silkscreen
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9370s)
+- Load graphic (Preferably black and white)
+- Use Bitmap to Component Converter
+- Create a Library Footprint
+- Import from Library
+- Lock Footprint Prevent from disappearing when PCB is Updated
 # Hiding JLCPCB order number
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9415s)
+- Go to silkscreen layer
+- Add a text box
+- Type ``JLCJLCJLCJLC`` (JLC 4 times)
+- Place text box under IC, microcontroller, or other component to keep hidden
+- Adjust text size as needed
 # Adding tooling holes for assembly
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9462s)
+- For doing an assembly
+- Select Edge Cuts Layer
+    - Mounting Hole, Using a footprint of a certain size
+        - circle of a radius of 0.576mm
+    - Edge cuts layer, draw a circle of a certain radius
+    - Produce 2 or 3 of these holes across the board
+    - Can have JLC PCB to do it
+    - Lock footprint to keep after updating PCB
 # Generating Gerber and drill files
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9550s)
+- Produce two folders:
+    - ./gerber
+        - Select File > Plot
+        - Select Directory: ./gerber
+        - Select Generate Drill Files
+            - Default Settings are fine
+        - Select Plot
+        - Refill Zones (if asked)
+        - go into file and select all files and compress them into a ``.rar`` file
+    - ./assembly
 # Footprint position file
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9527s)
+- File is for the pick and place machines
+    - File contains the centeroids of each of the components
+- Select File > Fabrication Outputs > Footprint Position (.pos) File...
+    - Output directory: ``./assembly``
+    - Defaults are fine
+    - Select Generate Position File
+    - Open files and make to following changes
+        - Change ``Ref`` to ``Designator``
+        - Change ``Val`` to ``Value``
+        - Change ``Package`` to ``Footprint``
+        - Change ``Pos X`` to ``Mid X``
+        - Change ``Pos Y`` to ``Mid Y``
+        - Change ``Rot`` to ``Rotation``
+        - Change ``Side`` to ``Layer``
+        - If there are imported graphics that are components delete them in the Position File
+        - Can find the specifics for these changes on JLC PCB's Website as well
 # Bill of materials (BOM) and assigning part numbers (LCSC)
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9694s)
+- Go to the schematic
+    - Give all of the components "Part Numbers"
+    - Select Edit Symbol Fields
+        - Select Add Field (Video)
+            - Bulk-edit fields of all symbols in schematic
+        - Select Add Field
+        - Name field: ``LCSC Part #``
+        - Navigate to [jlcpcb.com/parts](https://jlcpcb.com/parts)
+        - Search for individual parts in the list of components
+        - Copy the LCSC Part Number from the Website to the Symbol Fields Table
+        - Some components may not have a part number, typically if it is not a component (Mounting Hole), Through Hole, or Mounting Hole
+    - Export the Bill of Materials
+        - Download the JLC PCB BOM Plugin Extension: https://github.com/wokwi/kicad-jlcpcb-bom-plugin
+        - Select Plugin for JLC PCB
+        - Select Generate to produce BOM file
+        - Relocate files to assembly folder
 # Ordering PCBs via JLCPCB with assembly
 [Mark](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9872s)
+- Upload Zipped Gerber Files
+- Can use KiCad Gerber Viewer to Inspect Gerber Files before sending for manufacturing
+- The following have been selected in the video
+    - Impedance (Control): Yes, JLC7628
+    - Surface Finish: LeadFree HASL-RoHS
+    - Remove Order Number: Specify Location
+    - SMT Assembly: Enable
+        - Assemble Top Side
+        - SMT QTY: 5
+        - Tooling Holes: Added by Customer
+- Upload BOM file
+- Upload CPL file
+- Verify Component Information with the information Generated by JLC PCB
+    - Some parts would not have information, these parts are most likely not going to be assembled in the factory
+- Verify Parts Placement, and Quote
+    - Counter-Clockwise is positive
+- Select to Cart
+- Choose a Shipping Option
