@@ -53,10 +53,40 @@ In the development of hardware today most if not all hardware requires the use o
 However since the process for producing PCBs is a very involed process this project has been designed to step through how to produce a PCB from Schematic to Assembly to Production.
 
 \section{Project Schematic Diagram}
-On the following page the Schematic Diagam for the PCB Project is provided.
+On the following page the Schematic Diagam for the PCB Project is provided.\\
+Note: This design originates from an assignment written by \href{https://www.csuchico.edu/eece/faculty-staff/faculty/meghdad-hajimorad.shtml}{Dr. Meghdad (Amin) Hajimorad}. The assignment name is \href{run:./assets/MiniProject_Description_EECE211Fa2022_UPDATED.pdf}{MiniProject\_Description\_EECE211Fa2022\_UPDATED.pdf}\\
+\\
+This is an analog multiplier. $<Answer what is an anlog multiplier and how is it implemented.>$
 %\includegraphics{./../circuit.pdf}
-\includepdf[pages=-]{./../circuit.pdf}
+\includepdf[pages=-]{./assets/circuit.pdf}
 %\import{./}{schematic_diagram.tex}
+
+\section{Bill of Materials}
+All of these materials are distributed by the CSU Chico IEEE, therefore component prices provided on the table below are according to them.\\
+\\
+Note:
+\begin{enumerate}
+    \item All of these components are Through-Hole Components.
+    \item Footprint IDs refer to names that are provided in the KiCad 7 Library
+\end{enumerate}
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Component & Identification & Footprint & Price\\ 
+        \hline
+        Resistors & Carbon Film & Resistor\_THT:R\_Axial\_DIN0309\_L9.0mm\_D3.2mm\_P15.24mm\_Horizontal& \\  
+        \hline
+        Diode & 1N4148 & Diode\_THT:D\_DO-35\_SOD27\_P7.62\_Horizontal & cell9 \\
+        \hline
+        Pin Headers & Conn\_01x03\_Pin & Connector\_PinHeader\_1x03\_P2.54mm\_Vertical& \\
+        \hline
+        Operational Amplifier & LF347N & Package\_DIP:DIP-14\_W7.62mm\_Socket & \\
+        \hline
+        Operational Amplifier & TL084CN & Package\_DIP:DIP-14\_W7.62mm\_Socket & \\
+        \hline
+    \end{tabular}
+\end{center}
 
 \section{Scematic Layout}
 For the schematic layout ensure that you have the following parameters included into your diagrams and netlists.
@@ -69,4 +99,7 @@ The selected group to produce the Boards for this project is OSH Park. Be sure t
 
 \section{Assembly}
 Collect all of the components and make sure that you collect all of the appropriate components and assemble them in accordance to your design. If you have any descrpancies with understanding your board you can consult your schematic diagram on KiCad.
+
+\section{Testing}
+Testing will happen with the use of An Oscilloscope, Waveform Generator, DC Power Supply, and Multimeter.
 \end{document}

@@ -32,6 +32,20 @@ This workshop may be of interest to the following clubs, organizations, or affil
 - General Electrical and Computer Engineering Classes
 - Mechanical Keyboard Club
 
+# General Setting Overview
+Meetings will take 1.5 to 2 hours.
+Expect the acailable range of meetings to be 11 to 12 in total.
+
+## First Meeting
+- Introduce the Project
+- Introduce the Software
+- Introduce the Resources for the Project
+
+## Follwing Meetings
+- Take approximately 30 minutes to go over questions for material from the last meeting
+- Start working on next material to progress the knowledge of the students
+- For the remainder of the session walkthrough the steps to complete the task, if there are questions or someone needs help attend to them
+
 # Equiptment
 ## Development
 When using KiCad it would be a good idea for students to have the following:
