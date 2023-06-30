@@ -3,21 +3,31 @@
 %\usepackage{tikz}
 %\usepackage{circuitikz}
 
-%\begin{document}
+\ctikzset{resistors/scale=0.8,
+capacitors/scale=0.7,
+diodes/scale=0.6,
+transistors/scale=1.3}
 
 \begin{figure}[H]
   \begin{center}
     \begin{circuitikz}[american]
+      \draw (0,0) node[op amp] (opamp) {}
+      (opamp.-) to [R] (-3,0.5) to[V] (-3,-1) node[ground]{}
+      (opamp.-) to [short] ++(0,1) coordinate (leftC)
+      to[D*] (leftC -| opamp.out)
+      to[short, -*] (opamp.out);
+      \draw (opamp.+) to[short] (-2,-0.5) node[ground]{};
+    \end{circuitikz}
+    \caption{Schematic Diagram}
+  \end{center}
+\end{figure}
+
+\begin{comment}
       \draw (2,2) node[op amp, anchor=-](OA1){\texttt{OA1}};
       \draw (OA1.-) to[short] ++(0,4) coordinate (leftR)
       to[R=$R_2$, f<^=$I$] (leftR -| OA1.out)
       to[short, -*] (OA1.out);
       \draw (OA1.-) to[short] ++(0,2) coordinate (leftShort)
       to[short, f<^=$I$] (leftShort -| OA1.out)
-      to[short, -*] (OA1.out);
-    \end{circuitikz}
-    \caption{Schematic Diagram}
-  \end{center}
-\end{figure}
-
-%\end{document}
+      to[short, -*] (OA1.out);Short -| OA1.out)S
+\end{comment}

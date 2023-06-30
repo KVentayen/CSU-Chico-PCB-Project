@@ -15,6 +15,7 @@
 \usepackage{import}                     % Import Files into document
 \usepackage{tikz}                       % Create Diagrams using LaTeX
 \usepackage{circuitikz}                 % Create Circuit Diagrams
+\usepackage{pdfpages}
 \epstopdfsetup{update}
 
 \title{PCB Project Description}
@@ -45,8 +46,27 @@
 \maketitle
 
 \tableofcontents{}
-\section{}
 
-\import{./}{schematic_diagram.tex}
+\section{Introduction}
+In the development of hardware today most if not all hardware requires the use of Printed Circuit Boards or PCBs. Compared to other methodologies for assembling circuits such as breadboards and freeform circuit assemblies the usage of PCBs provides solutions that have a better formfactor, mechanical properties, and asthetic.\\
+\\
+However since the process for producing PCBs is a very involed process this project has been designed to step through how to produce a PCB from Schematic to Assembly to Production.
 
+\section{Project Schematic Diagram}
+On the following page the Schematic Diagam for the PCB Project is provided.
+%\includegraphics{./../circuit.pdf}
+\includepdf[pages=-]{./../circuit.pdf}
+%\import{./}{schematic_diagram.tex}
+
+\section{Scematic Layout}
+For the schematic layout ensure that you have the following parameters included into your diagrams and netlists.
+
+\section{PCB Board Layout}
+For the PCB Board Layout ensure that you have the following parameters included in your design.
+
+\section{Production}
+The selected group to produce the Boards for this project is OSH Park. Be sure to upload the file with the right parameters addressed to make sure that the board works appropriately.
+
+\section{Assembly}
+Collect all of the components and make sure that you collect all of the appropriate components and assemble them in accordance to your design. If you have any descrpancies with understanding your board you can consult your schematic diagram on KiCad.
 \end{document}
