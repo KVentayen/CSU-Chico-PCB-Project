@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1688162749 "c:/Users/User K/Desktop/Projects/CSU-Chico-PCB-Project/Project Description/PCB Project Description.tex" "PCB Project Description.pdf" "PCB Project Description" 1688162752 0
+["pdflatex"] 1688614675 "c:/Users/User K/Desktop/Projects/CSU-Chico-PCB-Project/Project Description/PCB Project Description.tex" "PCB Project Description.pdf" "PCB Project Description" 1688614681 0
   "C:/Users/User K/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1683664379 81114 236b0ad2674d63d9da0cf7b8a733fe83 ""
   "C:/Users/User K/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1678608927 23176306 691884c615904a2eb672e17368c2ec1f ""
   "C:/Users/User K/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -188,12 +188,12 @@
   "C:/Users/User K/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1667242266 32329 5d201ab4b4c773e7c876c2a052b07be3 ""
   "C:/Users/User K/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/User K/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "PCB Project Description.aux" 1688162752 1440 dc7bf6a596e5940ff03213fe33d243b1 "pdflatex"
-  "PCB Project Description.out" 1688162752 915 a2fe120076df60a6bb2d98c90b258de5 "pdflatex"
-  "PCB Project Description.tex" 1688162748 4974 fde5b9903bfe1c90c4c68e3447af579e ""
-  "PCB Project Description.toc" 1688162752 558 35754b2b6117ee562f94bc3eaefc1ecb "pdflatex"
+  "PCB Project Description.aux" 1688614681 1440 673b87d8c5958e9122c52d82015e8bbe "pdflatex"
+  "PCB Project Description.out" 1688614681 915 a2fe120076df60a6bb2d98c90b258de5 "pdflatex"
+  "PCB Project Description.tex" 1688614668 5259 c5aaa0e0b2b93de6bcd6d76b3b6023ca ""
+  "PCB Project Description.toc" 1688614681 558 611a503bc922d213a42936a8e724643e "pdflatex"
   "assets/circuit.pdf" 1687820297 17788 8059756690a4225b909dc5ded9f875a9 ""
-  "c:/Users/User K/Desktop/Projects/CSU-Chico-PCB-Project/Project Description/PCB Project Description.tex" 1688162748 4974 fde5b9903bfe1c90c4c68e3447af579e ""
+  "c:/Users/User K/Desktop/Projects/CSU-Chico-PCB-Project/Project Description/PCB Project Description.tex" 1688614668 5259 c5aaa0e0b2b93de6bcd6d76b3b6023ca ""
   (generated)
   "PCB Project Description.aux"
   "PCB Project Description.log"
