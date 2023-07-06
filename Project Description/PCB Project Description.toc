@@ -1,4 +1,5 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}The Analog Multiplier}{2}{subsection.1.1}%
 \contentsline {section}{\numberline {2}Project Schematic Diagram}{2}{section.2}%
 \contentsline {section}{\numberline {3}Bill of Materials}{4}{section.3}%
 \contentsline {section}{\numberline {4}Scematic Layout}{4}{section.4}%
