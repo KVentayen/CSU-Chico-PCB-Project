@@ -121,3 +121,6 @@ https://datasheetspdf.com/pdf-file/133245/FairchildSemiconductor/1N4148/1
 - OSH Park (https://oshpark.com)
 - JLC PCB (https://jlcpcb.com)
 - PCB Way (https://www.pcbway.com)
+
+# Extra
+The Mystery of the Missing Power Pins in KiCad (hackaday): https://hackaday.io/project/165772-recreating-the-jupiter-ace/log/165117-the-mystery-of-the-missing-power-pins-in-kicad
