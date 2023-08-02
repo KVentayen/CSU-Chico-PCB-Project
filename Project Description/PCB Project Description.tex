@@ -77,47 +77,98 @@ Note: This design originates from an assignment written by \href{https://www.csu
 
 \section{Bill of Materials}
 All of these materials are distributed by the CSU Chico IEEE, therefore component prices provided on the table below are according to them.\\
-\\
-Note:
+\begin{itemize}
+    \item Resistor: \$0.25
+    \item Diode: \$0.50
+    \item Pin Headers: \$1.00
+    \item Operational Amplifier (IC): \$1.00
+    \item 14 Pin Socket: \$1.00
+\end{itemize}
+
+\section{Scematic Layout}
+For the schematic layout ensure that you have the following parameters included into your diagrams and netlists.
+
 \begin{enumerate}
     \item All of these components are Through-Hole Components.
     \item Footprint IDs refer to names that are provided in the KiCad 7 Library
 \end{enumerate}
 
 \begin{center}
-    \begin{tabular}{|c|c|c|c|}
+    \begin{tabular}{|c|c|c|}
         \hline
-        Component & Identification & Footprint & Price\\ 
+        Component & Identification & Footprint\\
         \hline
-        Resistors & R\_Small & Resistor\_THT:R\_Axial\_DIN0309\_L9.0mm\_D3.2mm\_P15.24mm\_Horizontal & \\  
+        Resistors & R\_Small & Resistor\_THT:R\_Axial\_DIN0309\_L9.0mm\_D3.2mm\_P15.24mm\_Horizontal\\
         \hline
-        Diode & 1N4148 & Diode\_THT:D\_DO-35\_SOD27\_P7.62\_Horizontal & cell9 \\
+        Diode & 1N4148 & Diode\_THT:D\_DO-35\_SOD27\_P7.62\_Horizontal\\
         \hline
-        Pin Headers & Conn\_01x03\_Pin & Connector\_PinHeader\_1x03\_P2.54mm\_Vertical& \\
+        Pin Headers & Conn\_01x02\_Pin & Connector\_PinHeader\_1x02\_P2.54mm\_Vertical\\
         \hline
-        Operational Amplifier & LF347N & Package\_DIP:DIP-14\_W7.62mm\_LongPads & \\
+        Pin Headers & Conn\_01x03\_Pin & Connector\_PinHeader\_1x03\_P2.54mm\_Vertical\\
         \hline
-        Operational Amplifier & TL084CN & Package\_DIP:DIP-14\_W7.62mm\_LongPads & \\
+        Operational Amplifier & LF347N & Package\_DIP:DIP-14\_W7.62mm\_LongPads\\
         \hline
-        14 Pin Socket & TL084 & Package\_DIP:DIP-14\_W7.62mm\_Socket\_LongPads &\\
+        Operational Amplifier & TL084CN & Package\_DIP:DIP-14\_W7.62mm\_LongPads\\
+        \hline
+        14 Pin Socket & TL084 & Package\_DIP:DIP-14\_W7.62mm\_Socket\_LongPads\\
         \hline
     \end{tabular}
 \end{center}
 
-$<\text{Note how flexible or what parts could be used for the project specifically, such as operational amplifiers.}>$
-
-\section{Scematic Layout}
-For the schematic layout ensure that you have the following parameters included into your diagrams and netlists.
+Note: There are two Operational Amplifiers in the Materials. Either one can be used for this project.
 
 \section{PCB Board Layout}
 For the PCB Board Layout ensure that you have the following parameters included in your design.
 
+\subsection{Trace Widths}
+
+General Trace Widths:
+\begin{itemize}
+    \item 0.3 mm
+\end{itemize}
+
+Power Trace Widths:
+\begin{itemize}
+    \item 0.5 mm
+    \item 1.0 mm
+\end{itemize}
+
+\subsection{Via Diameters}
+\begin{itemize}
+    \item 0.3 mm
+    \item 0.5 mm
+    \item 1.0 mm
+\end{itemize}
+
 \section{Production}
-The selected group to produce the Boards for this project is OSH Park. Be sure to upload the file with the right parameters addressed to make sure that the board works appropriately.
+The selected group to produce the Boards for this project is OSH Park. Be sure to upload the file with the right parameters addressed to make sure that the board works appropriately.\\
+\\
+When ordering the board:
+
+\begin{itemize}
+    \item Use either Default PCB or After Dark
+\end{itemize}
 
 \section{Assembly}
 Collect all of the components and make sure that you collect all of the appropriate components and assemble them in accordance to your design. If you have any descrpancies with understanding your board you can consult your schematic diagram on KiCad.
 
 \section{Testing}
 Testing will happen with the use of An Oscilloscope, Waveform Generator, DC Power Supply, and Multimeter.
+
+\section{Appendix A: KiCad Download Link}
+KiCad is an Open-Source Software developed to design Printed Circuit Boards (PCBs).
+
+\begin{itemize}
+    \item Official Website: \url{https://www.kicad.org}
+    \item Download Page: \url{https://www.kicad.org/download/}
+\end{itemize}
+
+\section{Appendix B: OSH Park Link}
+OSH Park is a PCB Manufacturing Group in Portland, Oregon.
+
+\begin{itemize}
+    \item Official Website: \url{https://oshpark.com}
+    \item Sign In / Create an Account: \url{https://oshpark.com/users/sign_in}
+\end{itemize}
+
 \end{document}
